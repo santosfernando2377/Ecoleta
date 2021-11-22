@@ -5,12 +5,12 @@ import Print from "../img/print.svg";
 function Feature () {
 
     function coleta () {
-        let mensagem = "Nosso sistema de coleta é prático e rápido. O agente se descoloca até o ponto de coleta e recolhe o material conforme o horário marcado.";
+        let mensagem = "Nosso sistema de coleta é prático e rápido. O agente se desloca até o ponto de coleta e recolhe o material conforme o horário marcado.";
         return mensagem;
     }
     
     function analise () {
-        let mensagem = "Em nossa unidade de tratamento é selecionado o componentes que são reutilizáveis e aqueles que não são destinados e descarte de forma mais apropriada.";
+        let mensagem = "Em nossa unidade de tratamento são selecionados os componentes reutilizáveis e aqueles que não são tem o devido descarte da forma apropriada.";
         return mensagem;
     }
 
