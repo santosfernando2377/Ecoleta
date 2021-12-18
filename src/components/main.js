@@ -14,7 +14,7 @@ function Main () {
             <div className="col-lg-6 mx-auto">
                 <p className="lead mb-4">{sobre()}</p>
                 <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                    <button type="button" className="btn btn-success btn-lg px-4 gap-3">Nosso Chat</button>
+                   <a href="https://treinamento.altu.com.br/widgets/preview/bd3de5d9a10bd2d07516f1fb717a8d65" target="_blank" rel="noreferrer"><button type="button" className="btn btn-success btn-lg px-4 gap-3">Nosso Chat</button></a>
                     <button type="button" className="btn btn-outline-secondary btn-lg px-4" disabled>Nosso Blog</button>
                 </div>
             </div>
