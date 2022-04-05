@@ -1,6 +1,7 @@
-export default function Login() {
+export default function Componentlogin() {
     return (
-        <body className="text-center">
+        <div>
+            <div className="text-center">
     
     <main className="form-signin">
       <form>
@@ -9,11 +10,11 @@ export default function Login() {
     
         <div className="form-floating">
           <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com"/>
-          <label for="floatingInput">Email address</label>
+          <label htmlFor="floatingInput">Email address</label>
         </div>
         <div className="form-floating">
           <input type="password" className="form-control" id="floatingPassword" placeholder="Password"/>
-          <label for="floatingPassword">Password</label>
+          <label htmlFor="floatingPassword">Password</label>
         </div>
     
         <div className="checkbox mb-3">
@@ -25,11 +26,7 @@ export default function Login() {
         <p className="mt-5 mb-3 text-muted">© 2017–2021</p>
       </form>
     </main>
-    
-    
-        
-      
-    
-    </body>
+    </div>
+        </div>
     )
 }
