@@ -1,3 +1,4 @@
+import axios from 'axios';
 import { useState } from 'react'
 import { useNavigate, Link } from "react-router-dom";
 import logo from '../img/eco.png'
@@ -28,7 +29,14 @@ export default function Register () {
     }
 
     function onValidateUser () {
-
+        axios.post('http://localhost:4001/user', register)
+        .then((response) => {
+            console.log(response);
+            History('/login')
+        })
+        .catch((response) => {
+            console.error(response)
+        })
     }
     return (
         <>

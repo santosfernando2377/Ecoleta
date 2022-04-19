@@ -12,7 +12,7 @@ export default function page404() {
             <h1 className={`my-4 letterSpace fontWeight`}>Error 404</h1>
             
             <Link to={'/'}>
-                <button type="button" class="btn btn-success">Voltar</button>
+                <button type="button" className="btn btn-success">Voltar</button>
             </Link>
         </div>
     )
