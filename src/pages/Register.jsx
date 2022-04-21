@@ -39,16 +39,16 @@ export default function Register () {
         })
     }
     return (
-        <>
-        <div className='container d-flex flex-column justify-content-center align-items-center my-4'>
+        <div className='bg-color-primary'>
+        <div className='container d-flex flex-column justify-content-center align-items-center py-4'>
             <Link to={'/'}>
                 <img className="mb-4" src={logo} alt="logo eco" width={100}/>
             </Link>
         </div>
-        <div className="container my-3">
+        <div className="container py-3">
             <h3 className="h3 mb-3 fw-normal">Crie seu cadastro <span>Eco</span></h3>
         </div>
-        <div className="container my-3">
+        <div className="container py-3">
             <form onSubmit={onSumit}>
                 <div className="mb-3">
                     <label htmlFor="formGroupExampleInput" className="form-label">Nome Completo</label>
@@ -73,6 +73,6 @@ export default function Register () {
                 <button className="w-100 btn btn-lg btn-success my-2" type="submit" onClick={onValidateUser}>Cadastrar</button>
             </form>
         </div>
-        </>
+        </div>
     )
 }

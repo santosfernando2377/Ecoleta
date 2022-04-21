@@ -58,7 +58,7 @@ export default function Componentlogin() {
   }
 
   return (
-        <div>
+        <div className='bg-color-primary'>
             <div className="container min-vh-100 w-100 d-flex flex-column text-center justify-content-center align-items-center">
     
     <main className="form-signin container">
