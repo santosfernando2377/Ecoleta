@@ -73,7 +73,7 @@ export default function Componentlogin() {
           <input type="email" className="form-control" name='email' onChange={onChange} id="floatingInput" placeholder="name@example.com" defaultValue={''}/>
           <label htmlFor="floatingInput">Email address</label>
         </div>
-        <div className="form-floating my-3">
+        <div className="form-floating form-floating-sucess my-3">
           <input type="password" className="form-control" name='senha' onChange={onChange} id="floatingPassword" placeholder="Password" defaultValue={''}/>
           <label htmlFor="floatingPassword">Password</label>
         </div>
