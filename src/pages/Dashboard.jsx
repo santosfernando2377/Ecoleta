@@ -35,7 +35,7 @@ export default function Dashboard () {
     }, [])
     
     return (
-        <div className={`d-flex flex-row w-100 min-vh-100 bg`}>
+        <div className={`d-flex flex-row w-100 min-vh-100 bg-color-primary`}>
             <Menu/>
         </div>
     )
