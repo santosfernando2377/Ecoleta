@@ -1,5 +1,5 @@
-import Menu from '../components/menu'
-import styles from '../components/menu.css'
+import Menu from '../../components/menu'
+import styles from '../../components/menu.css'
 import  { useEffect, useState } from 'react'
 import { Navigate } from 'react-router-dom'
 import axios from 'axios'
