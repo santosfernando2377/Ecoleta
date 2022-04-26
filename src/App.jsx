@@ -5,6 +5,7 @@ import Register from './pages/Register'
 import Dashboard from './pages/Dashboard/index'
 import Pedidos from './pages/Dashboard/Pedidos'
 import Perfil from './pages/Dashboard/perfil'
+import Coleta from './pages/Dashboard/Solicitacao'
 import { Route, Routes, BrowserRouter } from 'react-router-dom'
 
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
         <Route path='/dashboard' element={<Dashboard/>}/>
         <Route path='/dashboard/perfil' element={<Perfil/>}/>
         <Route path='/dashboard/solicitacao' element={<Pedidos/>}/>
+        <Route path='/dashboard/coletas' element={<Coleta/>}/>
       </Routes>
     </BrowserRouter>
   )
