@@ -43,6 +43,7 @@ export default function Componentlogin() {
       } else if (data.email == response.data.message.email && data.senha == response.data.message.senha) {
         localStorage.setItem('emailEco',`${response.data.message.email}`)
         localStorage.setItem('senhaEco',`${response.data.message.senha}`)
+        localStorage.setItem('nomeEco',`${response.data.message.nome}`)
         History('/dashboard')
       }
       
