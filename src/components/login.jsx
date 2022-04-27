@@ -44,6 +44,7 @@ export default function Componentlogin() {
         localStorage.setItem('emailEco',`${response.data.message.email}`)
         localStorage.setItem('senhaEco',`${response.data.message.senha}`)
         localStorage.setItem('nomeEco',`${response.data.message.nome}`)
+        localStorage.setItem('idEco', `${response.data.message._id}`)
         History('/dashboard')
       }
       
