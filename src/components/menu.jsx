@@ -4,6 +4,7 @@ import Card from './card'
 export default function Menu() {
     
     let nome = localStorage.getItem('nomeEco')
+    let idUser = localStorage.getItem('idEco')
     
     return (
         <>
@@ -27,6 +28,10 @@ export default function Menu() {
                 titulo="Minhas Coletas"
                 subtitulo="Visualizar todas as suas coletas."
                 para="/dashboard/coletas"/>
+
+                <div>
+                    <p className='h5 my-2 fw-normal'>ID:{idUser}</p>
+                </div>
             </div>
         </>
     )
