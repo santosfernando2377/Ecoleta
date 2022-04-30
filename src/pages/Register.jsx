@@ -39,7 +39,7 @@ export default function Register () {
         })
     }
     return (
-        <div className='bg-color-primary'>
+        <div className='bg-color-primary min-vh-100'>
         <div className='container d-flex flex-column justify-content-center align-items-center py-4'>
             <Link to={'/'}>
                 <img className="mb-4" src={logo} alt="logo eco" width={100}/>
