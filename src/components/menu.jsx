@@ -9,7 +9,7 @@ export default function Menu() {
     return (
         <>
             <div className='d-flex flex-column justify-content-center align-items-center container '>
-                <Link to={'/'}>
+                <Link to={'/dashboard'}>
                     <p className='my-4 py-4'>
                         <img src={logo} width={100}/>
                     </p>
