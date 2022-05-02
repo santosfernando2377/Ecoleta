@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect} from 'react'
+import { useNavigate, Link } from 'react-router-dom'
 import axios from 'axios'
-import { Link } from 'react-router-dom'
 import Input from '../../components/form/input'
 import Botao from '../../components/form/botao'
 import logo from '../../img/eco.png'
@@ -11,11 +11,12 @@ export default function Perfil () {
     let email = localStorage.getItem('emailEco')
     let idUser = localStorage.getItem('idEco')
 
+    const History = useNavigate()
+
     const User = {
         'nome':'',
         'endereco':'',
-        'telefone':'',
-        'email':'',
+        'telefone':''
     }
 
     const [user, setUser] = useState(User)
@@ -31,7 +32,8 @@ export default function Perfil () {
     }, [])
 
     function onChange(event) {
-        const {name, value} = event.target.value
+        const {name, value} = event.target
+       
         setUser({... user, [name]: value})
     }
 
@@ -40,16 +42,15 @@ export default function Perfil () {
     }
 
     function onRegister() {
-        /*axios.put(`http://localhost:4001/user?email=${email}`, user)
+        axios.put(`http://localhost:4001/user?email=${email}`, user)
         .then((response) => {
             console.log(response.data.message)
+            History('/dashboard/perfil')
         })
         .catch((response) => {
             console.log(response)
-        })*/
+        })
     }
-
-    console.log(user)
 
     return (
         <div className="d-flex flex-row w-100 min-vh-100 bg-color-primary">
@@ -63,34 +64,27 @@ export default function Perfil () {
                 <h1 className='h3 mb-3 fw-normal'>Dados do Perfil</h1>
                 <div className='container'>
                     <form onSubmit={onSubmit}>
-                        <Input id='nome'
-                        type='text'
-                        label='Nome Completo'
-                        placeholder='Nome Completo'
-                        value={user.nome}
-                        onChange={onChange}/>
-                
-                        <Input id='endereco'
-                        type='text'
-                        label='Endereço'
-                        placeholder='Endereço'
-                        value={user.endereco}
-                        onChange={onChange}/>
-                
-                        <Input id='telefone'
-                        type='phone'
-                        label='Celular'
-                        placeholder='Celular'
-                        value={user.telefone}
-                        onChange={onChange}/>
-
-                        <Input id='email'
-                        type='email'
-                        label='Email'
-                        placeholder='Email'
-                        value={user.email}
-                        onChange={onChange}/>
-
+                    <Input
+                    id='nome'
+                    label='nome'
+                    type='text'
+                    defaultValue={user.nome}
+                    placeholder='nome'
+                    onChange={onChange}/>
+                    <Input
+                    id='endereco'
+                    label='endereco'
+                    type='text'
+                    defaultValue={user.endereco}
+                    placeholder='endereco'
+                    onChange={onChange}/>
+                    <Input
+                    id='telefone'
+                    label='telefone'
+                    type='text'
+                    defaultValue={user.telefone}
+                    placeholder='telefone'
+                    onChange={onChange}/>
                         <div className='d-flex w-100 flex-row py-3'>
                             <Botao onClick={onRegister} label='Atualizar'/>
                         </div>
