@@ -4,7 +4,7 @@ import Login from './pages/Login.jsx'
 import Register from './pages/Register.jsx'
 import Dashboard from './pages/Dashboard/Menu.jsx'
 import Pedidos from './pages/Dashboard/Pedidos.jsx'
-import Perfil from './pages/Dashboard/perfil.jsx'
+import Perfil from './pages/Dashboard/Perfil.jsx'
 import Coleta from './pages/Dashboard/Solicitacao.jsx'
 import { Route, Routes, BrowserRouter } from 'react-router-dom'
 
