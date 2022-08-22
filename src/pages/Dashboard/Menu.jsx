@@ -1,11 +1,11 @@
 import Menu from '../../components/menu'
 import styles from '../../components/menu.css'
 import  { useEffect, useState } from 'react'
-import { Navigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 export default function Dashboard () {
     
-    const History = Navigate
+    const History = useNavigate()
     
     const [user, setUser] = useState()
 

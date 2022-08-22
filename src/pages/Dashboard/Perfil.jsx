@@ -1,8 +1,8 @@
 import { useState, useEffect} from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import axios from 'axios'
-import Input from '../../components/form/input'
-import Botao from '../../components/form/botao'
+import Input from '../../components/form/input.jsx'
+import Botao from '../../components/form/botao.jsx'
 import logo from '../../img/eco.png'
 
 export default function Perfil () {
